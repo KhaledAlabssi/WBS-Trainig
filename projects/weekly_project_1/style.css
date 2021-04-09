@@ -181,6 +181,60 @@ hr {
     margin: 20px auto;
 }
 
+.clients {
+    width: 100%;
+    display: flex;
+    padding: 50px 20%;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.client-t {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+form > * {
+    margin: 10px 0;
+}
+
+
+.client-b {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.client-b img {
+    width: 40%;
+    margin: 10px auto;
+}
+
+.clients * h1 {
+    font-size: 18px;
+}
+
+footer {
+    background-image: url("bgk-footer.png");
+    height: 400px;
+    color: whitesmoke;
+}
+
 
 
 
