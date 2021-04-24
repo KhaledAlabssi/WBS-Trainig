@@ -25,10 +25,16 @@
     outline: 1px solid white;
     border-radius: 10px;
     
+    
   }
-  .col-6 h4 {
-    text-align: center;
+
+
+
+  .nat {
+    padding: 0 10px;
+
   }
+
   .row input {
     display: inline-flex;
     justify-content: last baseline;
