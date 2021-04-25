@@ -33,6 +33,66 @@ header img {
     display: none;
     /* height: 500px; */
 }
+/* Summry */
+.summry {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px 20px; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.summry img {
+    width: 50px;
+}
+
+/* Grid1 */
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+
+    height: auto;
+
+}
+
+.section1 .big-pic {
+    height: 200px;
+    width: 100%;
+    background-image: url('assets/Layer\ 10.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-repeat: no-repeat; */
+}
+
+.section1 .about-sec {
+    margin-top: 40px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.section1 .small-pic {
+    height: 150px;
+    width: 100%;
+    background-image: url('assets/Layer\ 11.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* SMALL */
 
 @media (min-width: 576px) {
 
@@ -41,8 +101,12 @@ header img {
         justify-content: space-evenly;
         align-items: flex-start;
     }
+
+
     
 }
+
+/* MID */
 
 @media (min-width: 990px) {
     header img {
@@ -52,9 +116,48 @@ header img {
     }
     
     header p {
-        margin-top: 70px;
+        margin-top: 100px;
     }
+
+    .summry {
+        height: 350px;
+    }
+
+    .summry p {
+        width: 60%;
+    }
+
+    .section1 {
+        display: grid;
+        height: 600px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "big-pic big-pic about-sec"
+        "big-pic big-pic about-sec"
+        "big-pic big-pic small-pic"
+        ;
+    }
+
+    .section1 .big-pic {
+        height: 600px;
+        grid-area: big-pic;
+    }
+
+    .section1 .about-sec {
+        height: 400px;
+        grid-area: about-sec;
+    }
+
+    .section1 .small-pic {
+        height: 200px;
+        grid-area: small-pic;
+    }
+
+
 }
+
+/* LARGE */
 
 @media (min-width: 1400px) {
     header {
