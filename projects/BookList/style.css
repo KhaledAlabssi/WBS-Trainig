@@ -17,7 +17,8 @@ body {
 
 h1 {
     text-align: center;
-    color: green
+    color: green;
+    margin-bottom: 1rem;
     
 }
 
@@ -27,7 +28,7 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     box-shadow: 0 4px 10px gray;
-    padding: 3rem 2rem;
+    padding: 1.5rem 2rem;
 
 }
 
@@ -40,6 +41,24 @@ label {
 input {
     width: 70%;
     margin-top: 1.5rem;
+}
+
+section.radio {
+    display: flex;
+    width: 100%;
+    
+}
+section.radio label {
+    font-size: small;
+    font-weight: normal;
+
+}
+
+button {
+    margin-top: 1rem;
+    width: 100%;
+    height: 2rem;
+    
 }
 
 
