@@ -126,16 +126,21 @@ form.addEventListener("submit", (i) => {
   const inputAuthor = document.querySelector("#inputAuthor");
   const readStatus = document.querySelector("input[name=read]:checked");
   i.preventDefault();
-  console.log(readStatus);
-  myBookList.add(
-    inputTitle.value,
-    inputGenre.value,
-    inputAuthor.value,
-    readStatus.value
-  );
-  inputTitle.value = "";
-  inputGenre.value = "";
-  inputAuthor.value = "";
+  if (!inputTitle.value || !inputGenre || !inputAuthor) {
+    alert("Please fill all the blank boxes");
+  } else {
+    console.log(readStatus);
+    myBookList.add(
+      inputTitle.value,
+      inputGenre.value,
+      inputAuthor.value,
+      readStatus.value
+    );
+    inputTitle.value = "";
+    inputGenre.value = "";
+    inputAuthor.value = "";
+    
+  }
 });
 
 //   console.log(myBookList);
