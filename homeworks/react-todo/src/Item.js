@@ -1,17 +1,17 @@
-import List from './List'
+import './Item.css'
 function Item ({title, todo}) {
 
     
 
     return (
-        <div>
-            <li>{title}</li>
-            <input type='checkbox' />
-            <li>{todo}</li>
-            <button>X</button>
+        <li>
+            
+            
+            {todo}
+            
 
 
-        </div>
+        </li>
         
         
     )

@@ -1,11 +1,12 @@
 import Item from './Item'
+import './List.css'
 
-function List ({title, todos}) {
+function List ({todos}) {
 
     return (
         
             <ul>
-                <h1>{title}</h1>
+                
                 {todos.map(todo => (<Item
                     key={todo.id} todo={todo.task} />
                     
